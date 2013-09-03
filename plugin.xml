@@ -4,20 +4,20 @@
    <extension
          point="org.eclipse.ui.startup">
       <startup
-            class="com.example.history.Startup"></startup>
+            class="com.example.history.Plugin"></startup>
    </extension>
    <extension
          point="org.eclipse.ui.views">
       <category
-            name="Sample Category"
-            id="com.example.ui">
+            name="Code History"
+            id="com.example.history.ui">
       </category>
       <view
             name="Sample View"
             icon="icons/sample.gif"
-            category="com.example.ui"
+            category="com.example.history.ui"
             class="com.example.history.ui.views.SampleView"
-            id="com.example.ui.views.SampleView">
+            id="com.example.history.ui.views.SampleView">
       </view>
    </extension>
    <extension
@@ -28,7 +28,7 @@
                ratio="0.5"
                relative="org.eclipse.ui.views.ProblemView"
                relationship="right"
-               id="com.example.ui.views.SampleView">
+               id="com.example.history.ui.views.SampleView">
          </view>
       </perspectiveExtension>
    </extension>
