@@ -1,4 +1,4 @@
-package com.example.plugin;
+package com.example.history;
 
 import org.eclipse.ui.ISelectionService;
 import org.eclipse.ui.PlatformUI;

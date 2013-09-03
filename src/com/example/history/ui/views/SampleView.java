@@ -1,4 +1,4 @@
-package com.example.ui.views;
+package com.example.history.ui.views;
 
 
 import org.eclipse.jdt.ui.JavaElementLabelProvider;
@@ -8,7 +8,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.ViewPart;
 
-import com.example.plugin.Activator;
+import com.example.history.Activator;
 
 
 /**

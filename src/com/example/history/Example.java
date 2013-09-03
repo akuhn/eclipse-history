@@ -1,4 +1,4 @@
-package com.example.plugin;
+package com.example.history;
 
 import java.lang.reflect.Method;
 

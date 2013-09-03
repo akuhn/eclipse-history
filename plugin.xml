@@ -4,7 +4,7 @@
    <extension
          point="org.eclipse.ui.startup">
       <startup
-            class="com.example.plugin.Startup"></startup>
+            class="com.example.history.Startup"></startup>
    </extension>
    <extension
          point="org.eclipse.ui.views">
@@ -16,7 +16,7 @@
             name="Sample View"
             icon="icons/sample.gif"
             category="com.example.ui"
-            class="com.example.ui.views.SampleView"
+            class="com.example.history.ui.views.SampleView"
             id="com.example.ui.views.SampleView">
       </view>
    </extension>

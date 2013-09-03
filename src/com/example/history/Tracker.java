@@ -1,4 +1,4 @@
-package com.example.plugin;
+package com.example.history;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.ISelectionService;
 import org.eclipse.ui.IWorkbenchPart;
 
-import com.example.ui.views.SampleView;
+import com.example.history.ui.views.SampleView;
 
 public class Tracker implements ISelectionListener {
 
