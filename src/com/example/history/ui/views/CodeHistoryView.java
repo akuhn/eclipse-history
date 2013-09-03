@@ -12,7 +12,7 @@ import com.example.history.core.History;
 import com.example.history.core.HistoryListener;
 import com.example.history.core.Item;
 
-public class SampleView extends ViewPart implements HistoryListener {
+public class CodeHistoryView extends ViewPart implements HistoryListener {
 
 	public static final String ID = "com.example.history.ui.views.SampleView";
 
@@ -20,7 +20,7 @@ public class SampleView extends ViewPart implements HistoryListener {
 	private TableViewer viewer;
 
 	
-	public SampleView() {
+	public CodeHistoryView() {
 		history = Plugin.getDefault().getHistory();
 	}
 	
