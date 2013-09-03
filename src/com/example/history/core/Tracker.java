@@ -1,5 +1,6 @@
 package com.example.history.core;
 
+import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.ISourceReference;
 import org.eclipse.jdt.internal.ui.javaeditor.JavaEditor;
 import org.eclipse.jface.viewers.ISelection;
@@ -27,7 +28,7 @@ public class Tracker implements ISelectionListener {
 			JavaEditor editor = (JavaEditor) part;
 			ISourceReference reference = computeHighlightRangeSourceReference.invoke(editor);
 			if (reference == null) return;
-			history.append(new Item(part, reference));
+			history.append(new Item(part, (IJavaElement) reference));
 		}
 	}
 

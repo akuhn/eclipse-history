@@ -4,6 +4,7 @@ import org.eclipse.jdt.ui.JavaElementLabelProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Table;
 import org.eclipse.ui.part.ViewPart;
 
 import com.example.history.Plugin;
@@ -39,6 +40,9 @@ public class SampleView extends ViewPart implements HistoryListener {
 	
 	@Override
 	public void historyChanged(History history, Item item) {
+		viewer.refresh();
+		Table table = viewer.getTable();
+		table.showItem(table.getItem(table.getItemCount() - 1));
 		viewer.refresh();
 	}
 	
