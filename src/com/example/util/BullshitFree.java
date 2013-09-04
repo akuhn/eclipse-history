@@ -10,8 +10,8 @@ public class BullshitFree extends RuntimeException {
 	}
 	
 	
-	public static <V> BullshitFreeMethod<V> method(Class jazz, String name) {
-		return new BullshitFreeMethod<V>(jazz, name);
+	public static <V> BullshitFreeMethod<V> method(Class jazz, String name, Class... types) {
+		return new BullshitFreeMethod<V>(jazz, name, types);
 	}
 	
 }
